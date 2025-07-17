@@ -1,2 +1,2 @@
 Flask==2.3.3
-rarfile==4.6
+rarfile==4.2
