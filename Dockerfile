@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.11
 
 # Añadir repositorio con soporte non-free
 RUN sed -i 's/deb http/deb http contrib non-free/g' /etc/apt/sources.list && \
