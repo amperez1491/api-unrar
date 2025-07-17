@@ -1,8 +1,7 @@
 FROM python:3.11
 
 # Añadir repositorio con soporte non-free
-RUN sed -i 's/deb http/deb http contrib non-free/g' /etc/apt/sources.list && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install -y unrar-free && \
     apt-get clean
 
